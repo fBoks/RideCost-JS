@@ -7,13 +7,15 @@ body {
 
 .container1 {
     background-color: #edf2fb;
-
-    max-width: 1200px;
+    
+    max-width: 80%;
+    min-width: 324px;
     width: 90%;
 
     margin: auto;
-    margin-top: 20px;
-    padding: 20px 10% 20px 10%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 20px 10% 40px 10%;
 
     box-shadow: 0 0 14px 3px #7d8492;
     border-radius: 10px;
@@ -43,7 +45,7 @@ h1 {
 .main__input-field {
     display: block;
 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .main__input-field label {
     margin-right: 20px;
@@ -114,3 +116,33 @@ h1 {
 .surface-area {}
 
 .cube-volume {}
+
+@media (max-width: 768px) {
+    .main__input-field__distance, 
+    .main__input-field__gas-consumption, 
+    .main__input-field__gas-price {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 20px;
+    }
+
+    .main__input-field label {
+        margin-bottom: 10px;
+    }
+
+    .main__buttons {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 40px;
+    }
+
+    .main__buttons button {
+        padding: 20px 20px;
+    }
+
+    .main__buttons .calculate-btn {
+        margin-bottom: 20px;
+    }
+}
