@@ -3,32 +3,31 @@ const script = () => {
     const calculateBtn = document.getElementById("calculate-btn");
     const clearBtn = document.getElementById("clear-btn");
 
-    let distance = document.getElementById("distance-input");
-    let gasConsumption = document.getElementById("gas-consumption-input");
-    let gasPrice = document.getElementById("gas-price-input");
+    let inputData = document.getElementById("input");
 
-    const rideCost = document.getElementById("ride-cost__res");
+    const faceAreaRes = document.getElementById("face-area__res");
+    const surfaceAreaRes = document.getElementById("surface-area__res");
+    const cubeVolumeRes = document.getElementById("cube-volume__res");
 
     // действия при клике
     calculateBtn.addEventListener("click", () => {
-        if (
-            distance.value === "" ||
-            gasConsumption.value === "" ||
-            gasPrice.value === "")
+        if (inputData.value === "")
         {
             alert("Введите данные!");
         }
         else
         {
-            rideCost.innerHTML = `${((distance.value / 100) * gasConsumption.value * gasPrice.value).toFixed(2)}`;
+            faceAreaRes.innerHTML = `${(inputData.value ** 2).toFixed(2)}`;
+            surfaceAreaRes.innerHTML = `${(inputData.value ** 2 * 6).toFixed(2)}`;
+            cubeVolumeRes.innerHTML = `${(inputData.value ** 3).toFixed(2)}`;
         }
     });
 
     clearBtn.addEventListener("click", () => {
-        distance.value = "";
-        gasConsumption.value = "";
-        gasPrice.value = "";
-        rideCost.innerHTML = "";
+        inputData.value = "";
+        faceAreaRes.innerHTML = "";
+        surfaceAreaRes.innerHTML = "";
+        cubeVolumeRes.innerHTML = "";
     })
 }
 

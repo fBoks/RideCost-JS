@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Стоимость поездки</title>
+    <title>Калькулятор для куба</title>
     
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -16,35 +16,34 @@
 <body>
     <div class="container1">
         <header class="header container2">
-            <h1>Стоимость поездки</h1>
+            <h1>Калькулятор для куба</h1>
         </header>
         <article class="main container2">
             <section class="main__input-field">
-                <div class="main__input-field__distance">
-                    <label for="distance-input" class="noselect">Расстояние (км)</label>
-                    <input id="distance-input" type="text" value="">
-                </div>
-                <div class="main__input-field__gas-consumption">
-                    <label for="gas-consumption-input" class="noselect">Расход бензина на 100 км (л)</label>
-                    <input id="gas-consumption-input" type="text" value="">
-                </div>
-                <div class="main__input-field__gas-price">
-                    <label for="gas-price-input" class="noselect">Цена 1 литра бензина (руб.)</label>
-                    <input id="gas-price-input" type="text" value="">
-                </div>
+                <label for="input" class="noselect">Длина ребра (м)</label>
+                <input id="input" type="text" value="">
             </section>
             <section class="main__buttons">
                 <button type="button" class="calculate-btn" id="calculate-btn">Рассчитать</button>
                 <button type="button" class="clear-btn" id="clear-btn">Очистить</button>
             </section>
             <section class="main__results">
-                <div class="main__results__ride-cost">
-                    <p class="description">Поездка обойдется в <span class="result" id="ride-cost__res"></span> руб.</p>
-                    
+                <div class="face-area">
+                    <p class="description">Площадь грани</p>
+                    <p class="result" id="face-area__res"></p>
+                </div>
+                <div class="surface-area">
+                    <p class="description">Площадь полной поверхности</p>
+                    <p class="result" id="surface-area__res"></p>
+                </div>
+                <div class="cube-volume">
+                    <p class="description">Объем</p>
+                    <p class="result" id="cube-volume__res"></p>
                 </div>
             </section>
         </article>
     </div>
+    <br>
 
     <script src="./js/script.js"></script>
 </body>
