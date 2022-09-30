@@ -7,15 +7,15 @@ body {
 
 .container1 {
     background-color: #edf2fb;
-
-    max-width: 1200px;
+    
+    max-width: 80%;
     min-width: 324px;
     width: 90%;
 
     margin: auto;
     margin-top: 30px;
     margin-bottom: 60px;
-    padding: 20px 10% 20px 10%;
+    padding: 20px 10% 40px 10%;
 
     box-shadow: 0 0 14px 3px #7d8492;
     border-radius: 10px;
@@ -43,19 +43,23 @@ h1 {
 .main {}
 
 .main__input-field {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
+    display: block;
 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .main__input-field label {
     margin-right: 20px;
 }
-.main__input-field input {
+.main__input-field div {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+.main__input-field div input {
     border: solid 2px #8093f1;
 
-    width: 60%;
+    max-width: 200px;
 
     font-size: 24px;
     padding: 5px;
@@ -85,14 +89,14 @@ h1 {
 
 .clear-btn {}
 
-.main__results div {
+.main__results div p span {
     background-color: #fff;
 
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
 
-    margin-bottom: 5px;
-    padding: 10px;
+    font-weight: 700;
+
+    padding: 5px 10px;
 
     border: solid 1px #c1d3fe;
     border-radius: 8px;
@@ -114,14 +118,17 @@ h1 {
 .cube-volume {}
 
 @media (max-width: 768px) {
-    .main__input-field {
+    .main__input-field__distance, 
+    .main__input-field__gas-consumption, 
+    .main__input-field__gas-price {
         display: flex;
         flex-direction: column;
 
-        margin-bottom: 40px;
-    }
-    .main__input-field label {
         margin-bottom: 20px;
+    }
+
+    .main__input-field label {
+        margin-bottom: 10px;
     }
 
     .main__buttons {
@@ -130,15 +137,12 @@ h1 {
 
         margin-bottom: 40px;
     }
+
     .main__buttons button {
         padding: 20px 20px;
     }
+
     .main__buttons .calculate-btn {
         margin-bottom: 20px;
-    }
-
-    .main__results div {
-        display: flex;
-        flex-direction: column;
     }
 }
