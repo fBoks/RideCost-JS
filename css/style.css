@@ -1,0 +1,116 @@
+body {
+    background-color: #d7e3fc;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.container1 {
+    background-color: #edf2fb;
+
+    max-width: 1200px;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 10% 20px 10%;
+
+    box-shadow: 0 0 14px 3px #7d8492;
+    border-radius: 10px;
+}
+
+.container2 {
+    max-width: 600px;
+    width: 90%;
+    
+    margin: auto;
+}
+
+.header {
+    margin-bottom: 34px;
+    padding-bottom: 10px;
+
+    border-bottom: solid 1px #8093f1;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.main {}
+
+.main__input-field {
+    display: block;
+
+    margin-bottom: 20px;
+}
+.main__input-field label {
+    margin-right: 20px;
+}
+.main__input-field div {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+.main__input-field div input {
+    border: solid 2px #8093f1;
+
+    max-width: 200px;
+
+    font-size: 24px;
+    padding: 5px;
+}
+
+.main__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+.main__buttons button {
+    background-color: #8093f1;
+    color: #fff;
+
+    font-size: 24px;
+
+    padding: 10px 20px;
+
+    border-radius: 12px;
+}
+.main__buttons button:hover {
+    background-color: #6a80f0;
+}
+
+.calculate-btn {}
+
+.clear-btn {}
+
+.main__results div p span {
+    background-color: #fff;
+
+    display: inline-block;
+
+    font-weight: 700;
+
+    padding: 5px 10px;
+
+    border: solid 1px #c1d3fe;
+    border-radius: 8px;
+}
+.main__results div p:not(:last-child) {
+    display: inline-block;
+
+    font-weight: 300;
+}
+
+.face-area {}
+
+.description {}
+
+.result {}
+
+.surface-area {}
+
+.cube-volume {}
