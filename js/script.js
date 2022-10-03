@@ -18,6 +18,13 @@ const script = () => {
         {
             alert("Введите данные!");
         }
+        else if (
+            distance.value < 0 ||
+            gasConsumption.value < 0 ||
+            gasPrice.value < 0)
+        {
+            alert("Введите неотрицательное число!");
+        }
         else
         {
             rideCost.innerHTML = `${((distance.value / 100) * gasConsumption.value * gasPrice.value).toFixed(2)}`;

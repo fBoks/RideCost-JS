@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стоимость поездки</title>
-    
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -13,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container1">
         <header class="header container2">
@@ -22,15 +24,15 @@
             <section class="main__input-field">
                 <div class="main__input-field__distance">
                     <label for="distance-input" class="noselect">Расстояние (км)</label>
-                    <input id="distance-input" type="text" value="">
+                    <input id="distance-input" type="number" value="">
                 </div>
                 <div class="main__input-field__gas-consumption">
                     <label for="gas-consumption-input" class="noselect">Расход бензина на 100 км (л)</label>
-                    <input id="gas-consumption-input" type="text" value="">
+                    <input id="gas-consumption-input" type="number" value="">
                 </div>
                 <div class="main__input-field__gas-price">
                     <label for="gas-price-input" class="noselect">Цена 1 литра бензина (руб.)</label>
-                    <input id="gas-price-input" type="text" value="">
+                    <input id="gas-price-input" type="number" value="">
                 </div>
             </section>
             <section class="main__buttons">
@@ -40,7 +42,7 @@
             <section class="main__results">
                 <div class="main__results__ride-cost">
                     <p class="description">Поездка обойдется в <span class="result" id="ride-cost__res"></span> руб.</p>
-                    
+
                 </div>
             </section>
         </article>
@@ -49,4 +51,5 @@
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
